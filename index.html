@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>JEC POST</title>
+    <link rel="icon" type="image/png" href="logo/logo-01.png">
+    <style>
+        :root {
+            --main-yellow: #FFC107;
+            --pure-white: #ffffff;
+            --deep-black: #000000;
+            --deep-red: #BD2333;
+            --deep-blue: #154E80;
+            --shadow: rgba(0, 0, 0, 0.15);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--pure-white);
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .main-wrapper {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .white-card {
+            background-color: var(--deep-red);
+            width: 100%;
+            padding: 50px 20px;
+            border-radius: 40px;
+            position: relative;
+            box-shadow: 0 25px 50px var(--shadow);
+            border: 1px solid rgba(255,255,255,0.3);
+            margin-bottom: 20px;
+        }
+
+        .profile-logo {
+            width: 150px;
+            height: 150px;
+            background-color: var(--pure-white);
+            border: 6px solid var(--deep-blue);
+            border-radius: 50%;
+            position: absolute;
+            bottom: -75px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 10px 25px var(--shadow);
+            z-index: 5;
+        }
+
+        .profile-logo img {
+            width: 140px;
+        }
+
+        .content-area {
+            width: 100%;
+            margin-top: 75px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .name-title {
+            font-size: 33px;
+            font-weight: 900;
+            color: var(--deep-red);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 8px;
+        }
+
+        .bio-text {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--deep-blue);
+            max-width: 90%;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        /* --- ستایلی نوێ بۆ دوگمەکان --- */
+        .app-download-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .mini-btn {
+            display: flex;
+            align-items: center;
+            background-color: var(--deep-blue);
+            color: var(--pure-white);
+            padding: 8px 16px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .mini-btn:hover { opacity: 0.9; transform: translateY(-2px); }
+
+        .circle-icon {
+            width: 10px;
+            height: 10px;
+            background-color: var(--pure-white);
+            border-radius: 50%;
+            margin-left: 8px;
+        }
+        /* --------------------------- */
+
+        .black-line {
+            width: 85%;
+            height: 2.5px;
+            background-color: var(--deep-blue);
+            margin-bottom: 35px;
+            border-radius: 2px;
+        }
+
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 36px;
+            width: 100%;
+            margin-bottom: 35px;
+        }
+
+        .circle-button {
+            flex: 0 0 75px; 
+            height: 75px;
+            background-color: var(--deep-red);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            box-shadow: 0 12px 25px var(--shadow);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        i {
+             color: var(--pure-white);
+             font-size: 40px;
+
+            }
+            .bunch{
+                padding: 5px 10px;
+            }
+
+        .circle-button:hover { transform: scale(1.1) translateY(-5px); }
+
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="white-card">
+            <div class="profile-logo">
+                <img src="logo/logo-01.png" alt="Logo">
+            </div>
+        </div>
+
+        <div class="content-area">
+            <h1 class="name-title">JEC POST</h1>
+            <p class="bio-text">گواستنەوەی پوستی خێرا لە هەموو کوردستان و عراق گەیاندنی خێرا بو دەستی وەرگر</p>
+            
+            <div class="app-download-buttons">
+                <a href="https://apps.apple.com/us/app/jec-post/id6753651109" class="mini-btn">
+                    iOS
+                    <i class="fa-brands fa-apple bunch"></i>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.kakas.jec" class="mini-btn">
+                    Android
+                    <i class="fa-brands fa-android bunch"></i>
+                </a>
+            </div>
+
+            <div class="black-line"></div>
+
+            <div class="grid-container">
+                <a href="https://www.facebook.com/profile.php?id=61580641202927" class="circle-button"><i class="fa-brands fa-facebook"></i></a>
+                <a href="whatsapp://send?phone=9647504574986" class="circle-button"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="whatsapp://send?phone=9647507719498" class="circle-button"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/jecpost?fbclid=IwY2xjawPf9Y1leHRuA2FlbQIxMABicmlkETEybGdWZVpCVzR6REE4WTlvc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHs5owg84nLQh3H5Z26FMcR8wy9yBAhRQGeMYSSqi72V4f2hG7EGOwyBFGXoS_aem_sNj5AUuaQWhsnXcyWtjsCA" class="circle-button"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@jec_post?_r=1&_t=ZS-93IusX1b6yW" class="circle-button"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            
+            <div class="black-line"></div>
+        </div>
+    </div>
+
+</body>
+</html>
